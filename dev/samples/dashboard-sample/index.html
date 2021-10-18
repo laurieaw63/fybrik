@@ -16,7 +16,7 @@
     
     
       
-        <title>HashiCorp Vault plugins - Fybrik</title>
+        <title>Dashboard sample - Fybrik</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hashicorp-vault-plugins" class="md-skip">
+        <a href="#dashboard-sample" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HashiCorp Vault plugins
+              Dashboard sample
             
           </span>
         </div>
@@ -200,15 +200,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../introduction/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../concepts/introduction/" class="md-tabs__link">
         Concepts
       </a>
     </li>
@@ -370,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samples/notebook/" class="md-nav__link">
+      <a href="../notebook/" class="md-nav__link">
         Notebook sample
       </a>
     </li>
@@ -390,14 +388,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -420,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../concepts/introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -434,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
+      <a href="../../concepts/architecture/" class="md-nav__link">
         Architecture
       </a>
     </li>
@@ -446,14 +442,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
       
       
@@ -476,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../connectors/" class="md-nav__link">
+      <a href="../../concepts/connectors/" class="md-nav__link">
         Connectors
       </a>
     </li>
@@ -490,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/" class="md-nav__link">
+      <a href="../../concepts/modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -502,21 +496,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../concepts/vault_plugins/" class="md-nav__link">
         HashiCorp Vault plugins
       </a>
-      
     </li>
   
 
@@ -993,6 +977,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-the-dashboard-application" class="md-nav__link">
+    About the dashboard application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-sample-architecture" class="md-nav__link">
+    Dashboard sample architecture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    Before you begin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-namespace-for-the-sample" class="md-nav__link">
+    Create a namespace for the sample
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backend-data-server" class="md-nav__link">
+    Backend data server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#register-the-assets" class="md-nav__link">
+    Register the assets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-jwt-authentication-key" class="md-nav__link">
+    Create JWT authentication key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fybrik-manager-rbac" class="md-nav__link">
+    Fybrik manager RBAC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-the-module" class="md-nav__link">
+    Deploy the module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-the-dashboard" class="md-nav__link">
+    Deploy the dashboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleanup" class="md-nav__link">
+    Cleanup
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1003,60 +1072,146 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/fybrik/fybrik/edit/master/site/docs/concepts/vault_plugins.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/fybrik/fybrik/edit/master/site/docs/samples/dashboard-sample.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="hashicorp-vault-plugins">HashiCorp Vault plugins</h1>
-<p><a href="https://www.vaultproject.io/docs/internals/plugins">HashiCorp Vault plugins</a> are standalone applications that Vault server executes to enable third-party secret engines and auth methods. 
-After their enablement during Vault server initialization, the plugins can be used as a regular auth or secrets backends. 
-This project uses secrets plugins to retrieve dataset credentials by the running <a href="../modules/">modules</a>. The plugins retrieve the credentials from where they are stored, for example, data catalog or in kubernetes secret.
-<a href="https://github.com/fybrik/vault-plugin-secrets-kubernetes-reader">Vault-plugin-secrets-kubernetes-reader</a> plugin is an example of Vault custom secret plugin which retrieves dataset credentials stored in a kubernetes secret.</p>
-<p>Additional secret plugins can be developed to retrieve credentials additional location. This <a href="https://learn.hashicorp.com/tutorials/vault/plugin-backends?in=vault/app-integration">tutorial</a> can serve as a good starting point to learn about Vault plugin development.</p>
-<p>The following steps are for configuring a secret plug-in for Fybrik:</p>
+                <h1 id="dashboard-sample">Dashboard sample</h1>
+<p>This sample shows how Fybrik enables a dashboard application to display data from a 
+backend REST server and displaying only compliant information with the person operating the dashboard.
+In the sample we show how a Fybrik module that support REST protocol can control what 
+information is displayed in the dashboard through policies.</p>
+<p>Specifically in this sample we demonstrate:
+- Just in time policy decisions 
+- A Fybrik module that supports REST API </p>
+<p>Note: At this time some features in this demo use mocks as some underlying support in 
+Fybrik is still pending.</p>
+<h2 id="about-the-dashboard-application">About the dashboard application</h2>
+<p>The dashboard application here is based on the smart manufacturing use-case of the European 
+Horizon 2020 research project <a href="https://fogprotect.eu/">Fogprotect</a>. 
+Details for the use case are available <a href="https://fogprotect.eu/results/#use-cases">here</a>.<br />
+The dashboard included in this sample is a mock dashboard of a remote manufacturing factory 
+which can be controlled/supervised by expert operators from remote, 
+without the need for the expert operator to be physically present in the factory.</p>
+<p>The scenario here is simplified for the purpose of this sample and demonstrates the following scenario:
+1. A manufacturing robot that operates the manufacturing facility which can be activated or stopped remotely.
+2. A safety dashboard observing the manufacturing floor which is composed of two areas. A 
+production and a non-production area, that are observed by a video camera with image 
+processing which monitors and counts the number of employees with and without helmets 
+in each area. This is called the safety data of the factory.  </p>
+<p>We demonstrate Fybrik abilities to control what data is seen by each role. 
+In this scenario we show the following roles:<br />
+1. A <em>Foreman</em> who is allowed to access all of the assets. 
+Furthermore, only the Foreman is allowed to control the robot in the manufacturing area.<br />
+2. A <em>Worker</em> who is not allowed to control the robot, and doesn't have privileges to see the number 
+of employees wearing/not wearing helmets in each of the available areas. However, a Worker can see the total 
+number of employees in each area.<br />
+3. <em>HR personnel</em> who are also not allowed to control the robot, but have access to view the number 
+of employees wearing/not wearing helmets in each area.</p>
+<h2 id="dashboard-sample-architecture">Dashboard sample architecture</h2>
+<p>The project contains 3 main components:<br />
+- A backend data service, which provides the mock data for the dashboard.<br />
+- A <a href="https://github.com/fybrik/fogProtect-dashboard-sample/tree/main/rest-read-module">fybrik module</a>, 
+responsible for intercepting HTTP requests sent from a user trying to read or write data.<br />
+- A dashboard application, which performs HTTP requests and displays the responses for the user.</p>
+<p>For a more detailed description of the implementation visit <a href="https://github.com/fybrik/fogProtect-dashboard-sample/tree/main">fogProtect-dashboard-sample</a>.</p>
+<h2 id="before-you-begin">Before you begin</h2>
+<ul>
+<li>Install Fybrik using the <a href="../../get-started/quickstart/">Quick Start</a> guide.</li>
+<li>A web browser.</li>
+</ul>
+<h2 id="create-a-namespace-for-the-sample">Create a namespace for the sample</h2>
+<p>Create a new Kubernetes namespace and set it as the active namespace:</p>
+<div class="highlight"><pre><span></span><code>kubectl create namespace fogprotect
+kubectl config set-context --current --namespace<span class="o">=</span>fogprotect
+</code></pre></div>
+<p>This enables easy <a href="#cleanup">cleanup</a> once you're done experimenting with the sample.</p>
+<h2 id="backend-data-server">Backend data server</h2>
+<p>The backend data server is responsible for reading or writing data to a database or any other resource. In this 
+example the backend data server is a simple server that returns the mock data for the dashboard.  <br />
+Run the backend data server:<br />
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">HELM_EXPERIMENTAL_OCI</span><span class="o">=</span><span class="m">1</span>
+helm chart pull ghcr.io/fybrik/backend-server-chart:v0.0.1
+helm chart <span class="nb">export</span> --destination<span class="o">=</span>./tmp ghcr.io/fybrik/backend-server-chart:v0.0.1
+helm install rel1-backend-server ./tmp/backend_server
+</code></pre></div></p>
+<h2 id="register-the-assets">Register the assets</h2>
+<p>In this example we use 3 of the endpoints that the backend data server exposes. For each endpoint, we define 
+an asset describing the data that will be returned as response from the backend data server. The description is used 
+later to apply policies on the data.<br />
+Register the assets:
+<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/assets/asset_get_safety_data.yaml
+kubectl apply -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/assets/asset_start_robot.yaml
+kubectl apply -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/assets/asset_stop_robot.yaml
+</code></pre></div>
+The identifier of the assets is <code>&lt;namespace&gt;/&lt;name&gt;</code>, and it should be used in the <code>FybrikApplication</code> that we will 
+describe later on. For example the identifier of the asset defined in the file <code>asset_start_robot.yaml</code> is 
+<code>fogprotect/api.control.start-robot</code>.  </p>
+<h2 id="create-jwt-authentication-key">Create JWT authentication key</h2>
+<p>As the HTTP requests should contain the role of the user in the header, the dashboard application uses JWT to pass 
+the JWT of the relevant role in the header. The JWT is authenticated using a secret key that we store as a secret 
+in the cluster, in both <code>fogprotect</code> and <code>fybrik-blueprints</code> namespaces.<br />
+Create the JWT secret:<br />
+<div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/secrets/jwt_key_secret.yaml
+kubectl apply -n fybrik-blueprints -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/secrets/jwt_key_secret.yaml
+</code></pre></div></p>
+<h2 id="fybrik-manager-rbac">Fybrik manager RBAC</h2>
+<p>In order for the fybrik manager to be able to access the assets and to deploy the fybrik module that we created, give 
+the manager the relevant <a href="https://github.com/fybrik/fogProtect-dashboard-sample/blob/main/fybrik-system-manager-rbac.yaml">RBAC authorization</a>:<br />
+<div class="highlight"><pre><span></span><code>kubectl apply -n fybrik-system -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/fybrik-system-manager-rbac.yaml
+</code></pre></div></p>
+<h2 id="deploy-the-module">Deploy the module</h2>
+<p>In our case, the module as we described earlier is responsible for intercepting the HTTP requests received 
+from the user. Once a request is received a decision must be made regarding the request, it should be either allowed, 
+columns redacted or blocked depending on the role of the user. The decision is made using 
+<a href="https://www.openpolicyagent.org">OpenPolicyAgent</a>, and applying the policy described in 
+<a href="#About the dashboard application">About the dashboard application</a> and specified 
+<a href="https://github.com/fybrik/fogProtect-dashboard-sample/blob/main/python/fogprotect-policy.yaml">here</a>.<br />
+Deploy the fybrik module and application:
+<div class="highlight"><pre><span></span><code>kubectl apply -n fybrik-system -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/rest-read-module.yaml
+kubectl apply -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/rest-read-application.yaml
+kubectl <span class="nb">wait</span> --for<span class="o">=</span><span class="nv">condition</span><span class="o">=</span>ready --all pod --timeout<span class="o">=</span>120s
+</code></pre></div></p>
+<h2 id="deploy-the-dashboard">Deploy the dashboard</h2>
+<p>We now deploy the dashboard that will display a table that contains the safety data of the factory, along with two 
+buttons to start and stop the manufacturing robot. One can change the role of the user using a pull down menu.<br />
+First create a port-forwarding to the service that will be intercepting the HTTP requests:<br />
+<div class="highlight"><pre><span></span><code>kubectl -n fybrik-blueprints port-forward svc/rest-read <span class="m">5559</span>:5559 <span class="p">&amp;</span>
+</code></pre></div></p>
+<p>Afterwards, deploy the dashboard application:<br />
+<div class="highlight"><pre><span></span><code>helm chart pull ghcr.io/fybrik/factory-gui-chart:v0.0.1
+helm chart <span class="nb">export</span> --destination<span class="o">=</span>./tmp ghcr.io/fybrik/factory-gui-chart:v0.0.1
+helm install rel1-factory-gui ./tmp/factory_gui
+kubectl <span class="nb">wait</span> --for<span class="o">=</span><span class="nv">condition</span><span class="o">=</span>ready --all pod --timeout<span class="o">=</span>120s
+</code></pre></div></p>
+<p>Lastly, create a port-forwarding to the dashboard service in order to be able to open the dashboard in your browser:<br />
+<div class="highlight"><pre><span></span><code>kubectl port-forward svc/factory-gui <span class="m">3001</span>:3000 <span class="p">&amp;</span>
+</code></pre></div></p>
+<p>Open your browser and go to http://127.0.0.1:3001.</p>
+<h2 id="cleanup">Cleanup</h2>
 <ol>
-<li>Enable the plugin during Vault server initialization in a specific path. An example of that can be found in helm chart <a href="https://github.com/fybrik/fybrik/blob/master/third_party/vault/vault-single-cluster/values.yaml">values.yaml</a> file in the project where <a href="https://github.com/fybrik/vault-plugin-secrets-kubernetes-reader">Vault-plugin-secrets-kubernetes-reader</a> plugin is enabled in <code>kubernetes-secrets</code> path:</li>
+<li>Stop the port-forwarding:
+    <div class="highlight"><pre><span></span><code>pgrep -f <span class="s2">&quot;kubectl port-forward svc/factory-gui 3001:3000&quot;</span> <span class="p">|</span> xargs <span class="nb">kill</span>
+pgrep -f <span class="s2">&quot;kubectl -n fybrik-blueprints port-forward svc/rest-read 5559:5559&quot;</span> <span class="p">|</span> xargs <span class="nb">kill</span>
+</code></pre></div></li>
+<li>Remove the <code>tmp</code> directory that was created temporarily:
+    <div class="highlight"><pre><span></span><code>rm -r tmp
+</code></pre></div></li>
+<li>Delete the fybrik application and module:
+    <div class="highlight"><pre><span></span><code>kubectl delete fybrikapplication rest-read
+kubectl -n fybrik-system delete fybrikmodule rest-read-module
+</code></pre></div></li>
+<li>Delete the <code>fogprotect</code> namespace:<br />
+    <div class="highlight"><pre><span></span><code>kubectl delete namespace fogprotect
+</code></pre></div></li>
+<li>Delete the RBAC authorization of the manager:<br />
+    <div class="highlight"><pre><span></span><code>kubectl -n fybrik-system delete -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/fybrik-system-manager-rbac.yaml
+</code></pre></div></li>
+<li>Delete the JWT secret:<br />
+    <div class="highlight"><pre><span></span><code>kubectl delete -n fybrik-blueprints -f https://raw.githubusercontent.com/fybrik/fogProtect-dashboard-sample/main/secrets/jwt_key_secret.yaml
+</code></pre></div></li>
 </ol>
-<div class="highlight"><pre><span></span><code>      vault secrets <span class="nb">enable</span> -path<span class="o">=</span>kubernetes-secrets vault-plugin-secrets-kubernetes-reader
-</code></pre></div>
-<ol>
-<li>Add <a href="https://www.vaultproject.io/docs/concepts/policies">Vault policy </a> to allow the <a href="../modules/">modules</a> to access secrets using the plugin.
-Following is an example of a policy which gives permission to read secrets in Vault path <code>kubernetes-secrets</code>:</li>
-</ol>
-<p><div class="highlight"><pre><span></span><code>vault policy write <span class="s2">&quot;allow-all-dataset-creds&quot;</span> - <span class="s">&lt;&lt;EOF</span>
-<span class="s">      path &quot;kubernetes-secrets/*&quot; {</span>
-<span class="s">      capabilities = [&quot;read&quot;]</span>
-<span class="s">      }</span>
-<span class="s">      EOF</span>
-</code></pre></div>
-3. Have the <code>CatalogDatasetInfo</code> structure from the <a href="../../reference/connectors#data_catalog_responseproto">data catalog response</a> contain the Vault secret path which should be used to retrieve the credentials for a given asset. When Vault plugin is used to retrieve the credentials the parameters to the plugin should follow the plugin usage instructions. This path will later be passed on to the <a href="../modules/">modules</a>.
-For example, when the credentials are stored in kubernetes secret as is done in the <a href="../../reference/katalog/">Katalog</a> built-in data catalog; the <a href="https://github.com/fybrik/vault-plugin-secrets-kubernetes-reader">Vault-plugin-secrets-kubernetes-reader</a> plugin can be used to retrieve the credentials. In this case two parameters should be passed: <code>paysim-csv</code>  which is the kubernetes secret name that holds the credentials and <code>fybrik-notebook-sample</code> is the secret namespace, both are known to the katalog when constructing the path.</p>
-<p>The following snippet shows <code>CatalogDatasetInfo</code> structure with Vault secret path in <code>CredentialsInfo</code> field.</p>
-<p><div class="highlight"><pre><span></span><code>    connectors.CatalogDatasetInfo<span class="o">{</span>
-        DatasetId: fybrik-notebook-sample/paysim-csv,
-        Details: <span class="p">&amp;</span>connectors.DatasetDetails<span class="o">{</span>
-            Name:       fybrik-notebook-sample/paysim-csv,
-            Geo:        theshire,
-            DataStore:  fybrik-notebook-sample/paysim-csv,
-            CredentialsInfo: <span class="p">&amp;</span>connectors.CredentialsInfo<span class="o">{</span>
-                VaultSecretPath: <span class="s2">&quot;/v1/kubernetes-secrets/paysim-csv?namespace=fybrik-notebook-sample&quot;</span>
-            <span class="o">}</span>,
-        <span class="o">}</span>,
-    <span class="o">}</span>
-</code></pre></div>
-4. Update the <a href="../modules/">modules</a> to use the <a href="../../reference/crds#blueprintspecflowstepsindexargumentscopydestinationvault">Vault related values</a> to retrieve dataset credentias during their runtime execution. The values contain <code>secretPath</code> field with the plugin path as described in the previous step.
-The following snippet, taken from <a href="https://github.com/fybrik/hello-world-module">hello-world-module</a> <a href="https://github.com/fybrik/hello-world-module/blob/main/hello-world-module/values.yaml">values.yaml</a> file, contains an example of such values. </p>
-<div class="highlight"><pre><span></span><code>    vault:
-      <span class="c1"># Address is Vault address</span>
-      address: http://vault.fybrik-system:8200
-      <span class="c1"># AuthPath is the path to auth method used to login to Vault</span>
-      authPath: /v1/auth/kubernetes/login
-      <span class="c1"># Role is the Vault role used for retrieving the credentials</span>
-      role: module
-      <span class="c1"># SecretPath is the path of the secret holding the Credentials in Vault</span>
-      secretPath: /v1/kubernetes-secrets/paysim-csv?namespace<span class="o">=</span>fybrik-notebook-sample
-</code></pre></div>
                 
               
               
@@ -1072,41 +1227,6 @@ The following snippet, taken from <a href="https://github.com/fybrik/hello-world
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../modules/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Modules" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Modules
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../tasks/control-plane-security/" class="md-footer__link md-footer__link--next" aria-label="Next: Enable Control Plane Security" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Enable Control Plane Security
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
