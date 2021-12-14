@@ -11,7 +11,7 @@
       
       
       <link rel="icon" href="../../static/logo.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.5">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.1">
     
     
       
@@ -19,10 +19,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a617204b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.23b6d78a.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.9204c3b2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
           
           
@@ -1172,12 +1172,7 @@ Can be a client to the external component(s) or be independent.</li>
 * Copy - for performing an implicit data copy on behalf of the application.  The decision to do an implicit copy is made by the control plane, typically for performance or governance reasons.</p>
 <p>A module may be used in one or more of these flows, as is indicated in the module's yaml file.</p>
 <h2 id="control-plane-choice-of-modules">Control plane choice of modules</h2>
-<p>A user workload description <code>FybrikApplicaton</code> includes a list of the data sets required, the technologies that will be used to read them, and information about the location and reason for the use of the data.  This information together with input from data and enterprise policies, determine which modules are chosen by the control plane. Currently the logic for choosing the modules for the data plane is as follows:
-1. If the user is requesting to read data, find all the read flow related modules
-1. If the data set protocol/format and the protocol/format requested by the user do not match, then make an implicit copy of the data, storing it such that it is readable via the protocol/format requested by the user.
-1. If the governance action(s) required on the data set are not supported by the read module, and it is supported by the implicit copy module ... then make an implicit copy. Otherwise no need for implicit copy, and read will be done from the source directly.</p>
-<!-- TODO: Update to address multi-cluster logic -->
-
+<p>A user workload description <code>FybrikApplicaton</code> includes a list of the data sets required, the technologies that will be used to read them, and information about the location and reason for the use of the data.  This information together with input from data and <a href="../../reference/config-policies/">enterprise policies</a>, determine which modules are chosen by the control plane and where they are deployed. </p>
 <h2 id="available-modules">Available modules</h2>
 <p>The table below lists the currently available modules:</p>
 <table>
@@ -1288,10 +1283,10 @@ Can be a client to the external component(s) or be independent.</li>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.cefbb252.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.c7dec7e7.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a5f8ea78.min.js"></script>
+      <script src="../../assets/javascripts/bundle.da79ceb7.min.js"></script>
       
     
   </body>
