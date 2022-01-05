@@ -11,7 +11,7 @@
       
       
       <link rel="icon" href="../../static/logo.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7951f6f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bb3983ee.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -516,6 +516,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/config-policies/" class="md-nav__link">
+        Configuration Policies
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -573,7 +587,7 @@
   
     <li class="md-nav__item">
       <a href="../using-opa/" class="md-nav__link">
-        Using OPA
+        Using OPA for Data Governance
       </a>
     </li>
   
@@ -682,7 +696,7 @@
   
     <li class="md-nav__item">
       <a href="../custom-taxonomy/" class="md-nav__link">
-        Using a Custom Taxonomy for Resource Validation
+        Background
       </a>
     </li>
   
@@ -756,10 +770,57 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          Connectors API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Connectors API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Connectors API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../reference/connectors/" class="md-nav__link">
-        Connectors API
+      <a href="../../reference/connectors-datacatalog/" class="md-nav__link">
+        Data catalog
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/connectors-policymanager/" class="md-nav__link">
+        Policy manager
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1136,7 +1197,7 @@
 
 <h1 id="multicluster-setup">Multicluster setup</h1>
 <p>Fybrik is dynamic in its multi cluster capabilities in that it has abstractions to support multiple
-different cross-cluster orchestration mechanisms. Currently only one multi cluster orchestration mechanism is implemented
+different cross-cluster orchestration mechanisms. Currently, only one multi cluster orchestration mechanism is implemented
 and is using <a href="http://razee.io">Razee</a> for the orchestration.</p>
 <h2 id="multicluster-operation-with-razee">Multicluster operation with Razee</h2>
 <p>Razee is a multi-cluster continuous delivery tool for Kubernetes that can deploy software on remote clusters and track
@@ -1161,7 +1222,7 @@ Please follow the instructions in the Razee documentation to install <a href="ht
 <a href="https://github.com/razee-io/Razee/blob/master/README.md#installing-watch-keeper-in-every-cluster-that-you-want-to-monitor">Watch keeper</a> and
 the <a href="https://github.com/razee-io/Razee/blob/master/README.md#automating-the-deployment-of-kubernetes-resources-across-clusters-and-environments">cluster subscription agent</a>.
 At the moment Razee supports GitHub, GitHub Enterprise and BitBucket for the OAUTH Authentication of this installation.</p>
-<p>Please be aware that the RazeeDash API needs to be reachable from all clusters. Thus there may be the need for routes, ingresses or node ports
+<p>Please be aware that the RazeeDash API needs to be reachable from all clusters. Thus, there may be the need for routes, ingresses or node ports
  in order to expose it to other networks and clusters.</p>
 <!-- TODO maybe add a description on how to install it including openshift routes etc -->
 
@@ -1174,6 +1235,7 @@ The API Key can also be retrieved from the UI following these two steps.</p>
 <p>In order to configure Fybrik to use the installed Razee on Kubernetes the values of the helm charts have to be adapted
 to the following:
 <div class="highlight"><pre><span></span><code>coordinator:
+  razee:
     # URL for Razee deployment
     url: &quot;https://your-razee-service:3333/graphql&quot;
     # Razee deployment with oauth API key authentication requires the apiKey parameter
@@ -1190,7 +1252,7 @@ The coordinator configuration would look like the following:
 </code></pre></div></p>
 <h3 id="installing-using-ibm-satellite-config">Installing using IBM Satellite Config</h3>
 <p>When using <a href="https://cloud.ibm.com/satellite">IBM Satellite Config</a> the RazeeDash API is running as a service in the
-cloud and all CRD distribution is handled by the cloud. The process here describes how an already existing Kubernetes
+cloud and all custom resource distribution is handled by the cloud. The process here describes how an already existing Kubernetes
 cluster can be registered and configured. </p>
 <p>Prerequisites:</p>
 <ul>
@@ -1236,7 +1298,7 @@ A configuration using IBM Satellite Config would look like the following for the
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../using-opa/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Using OPA" rel="prev">
+        <a href="../using-opa/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Using OPA for Data Governance" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1245,20 +1307,20 @@ A configuration using IBM Satellite Config would look like the following for the
               <span class="md-footer__direction">
                 Previous
               </span>
-              Using OPA
+              Using OPA for Data Governance
             </div>
           </div>
         </a>
       
       
         
-        <a href="../custom-taxonomy/" class="md-footer__link md-footer__link--next" aria-label="Next: Using a Custom Taxonomy for Resource Validation" rel="next">
+        <a href="../custom-taxonomy/" class="md-footer__link md-footer__link--next" aria-label="Next: Background" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Using a Custom Taxonomy for Resource Validation
+              Background
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1305,10 +1367,10 @@ A configuration using IBM Satellite Config would look like the following for the
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.0bbba5b5.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.361d90f1.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.649a939e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.289a2a4b.min.js"></script>
       
     
   </body>

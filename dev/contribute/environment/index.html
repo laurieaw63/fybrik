@@ -11,7 +11,7 @@
       
       
       <link rel="icon" href="../../static/logo.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7951f6f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bb3983ee.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -516,6 +516,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/config-policies/" class="md-nav__link">
+        Configuration Policies
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -571,7 +585,7 @@
   
     <li class="md-nav__item">
       <a href="../../tasks/using-opa/" class="md-nav__link">
-        Using OPA
+        Using OPA for Data Governance
       </a>
     </li>
   
@@ -599,7 +613,7 @@
   
     <li class="md-nav__item">
       <a href="../../tasks/custom-taxonomy/" class="md-nav__link">
-        Using a Custom Taxonomy for Resource Validation
+        Background
       </a>
     </li>
   
@@ -673,10 +687,57 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          Connectors API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Connectors API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Connectors API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../reference/connectors/" class="md-nav__link">
-        Connectors API
+      <a href="../../reference/connectors-datacatalog/" class="md-nav__link">
+        Data catalog
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/connectors-policymanager/" class="md-nav__link">
+        Policy manager
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1120,9 +1181,9 @@ a remote Linux machine, or any other solution such as a virtual machine.</p>
 <p>This installs additional dependencies to <code>hack/tools/bin</code>. The <code>make</code> targets (e.g., <code>make test</code>) are configured to use the binaries from <code>hack/tools/bin</code>. However, you may want to add some of these tools to your system PATH for direct usage from your terminal (e.g., for using <code>kubectl</code>).</p>
 <p>Please note: For fybrik version 0.5 and lower, Helm version greater than 3.3 but less than 3.7 is required when contributing.</p>
 <h2 id="editors">Editors</h2>
-<p>The project is predominantly written in Go so we recommend <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go">Visual Studio Code</a> for its good Go support. Alternatively you can select from <a href="https://golang.org/doc/editors.html">Editors</a></p>
+<p>The project is predominantly written in Go, so we recommend <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go">Visual Studio Code</a> for its good Go support. Alternatively you can select from <a href="https://golang.org/doc/editors.html">Editors</a></p>
 <h2 id="docker-hub-rate-limits">Docker hub rate limits</h2>
-<p>As docker hub introduced rate limits on docker image downloads this may effect development using the local kind setup.
+<p>As docker hub introduced rate limits on docker image downloads this may affect development using the local kind setup.
 One option to fix the limit is to use a docker hub login for downloading the images. The environment will run
 a docker registry as a proxy for all public images. This registry runs in a docker container next to the kind clusters. </p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">DOCKERHUB_USERNAME</span><span class="o">=</span><span class="s1">&#39;your docker hub username&#39;</span>
@@ -1210,10 +1271,10 @@ a docker registry as a proxy for all public images. This registry runs in a dock
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.0bbba5b5.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.361d90f1.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.649a939e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.289a2a4b.min.js"></script>
       
     
   </body>
